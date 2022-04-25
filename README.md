@@ -1,6 +1,6 @@
 # ICS2O-Alien-Game
 
-[![GitHub's Super Linter](https://github.com/Johanna-liu16/ICS2O-Alien-Game/workflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/Johanna-liu16/ICS2O-Alien-Game/actions)
+[![Johanna Liu's Super Linter](https://github.com/Johanna-liu16/ICS2O-Alien-Game/workflows/Johanna%20Liu's%20Super%20Linter/badge.svg)](https://github.com/Johanna-liu16/ICS2O-Alien-Game/actions)
 
 [![Run on Repl.it](https://repl.it/badge/github/Johanna-liu16/ICS2O-Alien-Game)](https://repl.it/github/Johanna-liu16/ICS2O-Alien-Game)
 
