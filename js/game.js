@@ -7,16 +7,16 @@
 // This file contains the JS functions for index.html
 
 // scene import statements
-import SplashScene from "./splashScene.js"
-import TitleScene from "./titleScene.js"
+import SplashScene from "./splashScene.js";
+import TitleScene from "./titleScene.js";
 
 // create the new scenes
-const splashScene = new SplashScene()
-const titleScene = new TitleScene()
+const splashScene = new SplashScene();
+const titleScene = new TitleScene();
 
 /**
  * Start Phaser Game.
-  */
+ */
 const config = {
   type: Phaser.AUTO,
   width: 1920,
@@ -32,17 +32,17 @@ const config = {
   scale: {
     mode: Phaser.Scale.FIT,
     //middle of the page.
-    autoCenter: Phaser.Scale.CENTER_BOTH
+    autoCenter: Phaser.Scale.CENTER_BOTH,
   },
-}
+};
 
-const game = new Phaser.Game(config)
+const game = new Phaser.Game(config);
 //console.log(game)
 
 // load scenes
 // Note: remember any "key" is global and CAN NOT be reused!
-game.scene.add("splashScene", splashScene)
-game.scene.add("titleScene", titleScene)
+game.scene.add("splashScene", splashScene);
+game.scene.add("titleScene", titleScene);
 
 // the start scene
-game.scene.start("splashScene")
+game.scene.start("splashScene");
