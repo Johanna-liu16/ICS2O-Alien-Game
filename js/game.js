@@ -6,13 +6,21 @@
 // Created on: Mar 2022
 // This file contains the JS functions for index.html
 
-// Game Scene/
+// scene import statements
+import SplashScene from "./splashScene.js"
+
+// create the new scenes
+const splashScene = new SplashScene()
+
+/**
+  * Start Phaser Game.
+  */
 const config = {
   type: Phaser.AUTO,
   width: 1920,
   height: 1080,
   physics: {
-    defult: "arcade",
+    default: "arcade",
     arcade: {
       debug: true,
     },
@@ -22,9 +30,16 @@ const config = {
   scale: {
     mode: Phaser.Scale.FIT,
     //middle of the page.
-    autoCenter: Phaser.Scale.CENTER_BOTH,
+    autoCenter: Phaser.Scale.CENTER_BOTH
   },
-};
+}
 
-const game = new Phaser.Game(config);
-console.log(game);
+const game = new Phaser.Game(config)
+//console.log(game)
+
+// load scenes
+// Note: remember any "key" is global can Can be reused
+game.scene.add("splashScene", splashScene)
+
+// the start scene
+game.scene.start("splashScene")
