@@ -22,9 +22,9 @@ const config = {
   scale: {
     mode: Phaser.Scale.FIT,
     //middle of the page.
-    autoCenter: Phaser.Scale.CENTER_BOTH
+    autoCenter: Phaser.Scale.CENTER_BOTH,
   },
-}
+};
 
-const game = new Phaser.Game(config)
-console.log(game)
+const game = new Phaser.Game(config);
+console.log(game);
