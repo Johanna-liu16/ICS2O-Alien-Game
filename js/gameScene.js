@@ -122,8 +122,8 @@ class GameScene extends Phaser.Scene {
           this.ship.y,
           "missile"
         )
-        this.missileGroup.add(aNewMissile)
-        this.sound.play("laser")
+        this.missileGroup.add(aNewMissile);
+        this.sound.play("laser");
       }
     }
 
@@ -134,7 +134,7 @@ class GameScene extends Phaser.Scene {
     this.missileGroup.children.each(function (item) {
       item.y = item.y - 15;
       if (item.y < 0) {
-        item.destroy()
+        item.destroy();
       }
     })
   }
