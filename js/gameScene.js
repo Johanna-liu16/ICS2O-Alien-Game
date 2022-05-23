@@ -34,9 +34,10 @@ class GameScene extends Phaser.Scene {
     this.score = 0;
     this.scoreText = null;
     this.scoreTextStyle = {
-      font: '65px Arial', 
-      fill: '#ffffff', 
-      align: 'center'}
+      font: "65px Arial", 
+      fill: "#ffffff", 
+      align: "center",
+    }
   }
 
   /**
@@ -75,9 +76,9 @@ class GameScene extends Phaser.Scene {
     this.background.setOrigin(0, 0);
 
     this.scoreText = this.add.text(
-     10, 
-     10, 
-      "Score: " + this.score.toString(), 
+      10, 
+      10,
+      "Score: " + this.score.toString(),
       this.scoreTextStyle
     );
 
