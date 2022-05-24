@@ -39,8 +39,8 @@ class GameScene extends Phaser.Scene {
       align: "center",
     };
     this.gameOverTextStyle = {
-      font: "65px Arial", 
-      fill: "#ff0000", 
+      font: "65px Arial",
+      fill: "#ff0000",
       align: "center",
     };
   }
@@ -121,7 +121,8 @@ class GameScene extends Phaser.Scene {
         this.physics.pause();
         alienCollide.destroy();
         shipCollide.destroy();
-        this.gameOverText = this.add.text(
+        this.gameOverText =
+            this.add.text(
             1920 / 2,
             1080 / 2,
             "Game Over!\nClick to play again.",
@@ -129,8 +130,8 @@ class GameScene extends Phaser.Scene {
           ).setOrigin(0.5);
         this.gameOverText.setInteractive({ useHandCursor: true });
         this.gameOverText.on("pointerdown", () =>
-            this.scene.start("gameScene")
-                            );
+          this.scene.start("gameScene")
+     );
       }.bind(this)
     );
   }
