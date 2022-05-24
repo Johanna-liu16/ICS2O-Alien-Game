@@ -38,10 +38,10 @@ class GameScene extends Phaser.Scene {
       fill: "#ffffff",
       align: "center",
     };
-    this.gameOverTextStyle = { 
-        font: "65px Arial", 
-        fill: "#ff0000", 
-        align: "center",
+    this.gameOverTextStyle = {
+      font: "65px Arial", 
+      fill: "#ff0000", 
+      align: "center",
     };
   }
 
@@ -126,12 +126,13 @@ class GameScene extends Phaser.Scene {
             1080 / 2,
             "Game Over!\nClick to play again.",
             this.gameOverTextStyle
-        ).setOrigin(0.5);
-        this.gameOverText.setInteractive({ useHandCursor: true});
-        this.gameOverText.on("pointerdown", () => this.scene.start("gameScene"));
+          ).setOrigin(0.5);
+        this.gameOverText.setInteractive({ useHandCursor: true });
+        this.gameOverText.on("pointerdown", () =>
+            this.scene.start("gameScene")
+                            );
       }.bind(this)
     );
-  
   }
 
   /**
