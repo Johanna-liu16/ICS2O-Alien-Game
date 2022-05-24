@@ -128,7 +128,7 @@ class GameScene extends Phaser.Scene {
             "Game Over!\nClick to play again.",
             this.gameOverTextStyle
           )
-           .setOrigin(0.5);
+          .setOrigin(0.5);
         this.gameOverText.setInteractive({ useHandCursor: true });
         this.gameOverText.on("pointerdown", () =>
           this.scene.start("gameScene")
